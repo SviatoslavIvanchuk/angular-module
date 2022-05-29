@@ -1,0 +1,29 @@
+<div *ngIf="userDetails">
+<ul>
+  <li>{{userDetails.id}}. {{userDetails.name}}</li>
+  <li>{{userDetails.username}}--{{userDetails.email}}</li>
+  <li>Address:
+    <ul>
+      <li>Street: {{userDetails.address.street}}</li>
+      <li>Suite: {{userDetails.address.suite}}</li>
+      <li>City: {{userDetails.address.city}}</li>
+      <li>Zipcode: {{userDetails.address.zipcode}}</li>
+      <li>Geo:
+        <ul>
+          <li>Lat: {{userDetails.address.geo.lat}}</li>
+          <li>Lng: {{userDetails.address.geo.lng}}</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Phone: {{userDetails.phone}}</li>
+  <li>Website: {{userDetails.website}}</li>
+  <li>Сompany:
+    <ul>
+      <li>Name: {{userDetails.company.name}}</li>
+      <li>Catch Phrase: {{userDetails.company.catchPhrase}}</li>
+      <li>Bs: {{userDetails.company.bs}}</li>
+    </ul>
+  </li>
+</ul>
+</div>

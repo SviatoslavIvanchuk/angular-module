@@ -1,5 +1,8 @@
-.post {
-  background: #b9a0a0;
-  margin: 2px;
-  padding: 4px;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active a{
+  color: orange;
 }

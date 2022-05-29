@@ -4,6 +4,7 @@ import { Observable } from "rxjs";
 
 import { IUser } from "../interfaces";
 import { urls } from "../constants";
+import {IUserDetails} from "../interfaces/userDetails.interface";
 
 @Injectable({
   providedIn: 'root'
@@ -17,8 +18,8 @@ export class UserService {
       .get<IUser[]>(urls.users);
   }
 
-  getUser(id: number): Observable<IUser> {
+  getById(id: string): Observable<IUserDetails> {
     return this.httpClient
-      .get<IUser>(urls.users + '/' + id)
+      .get<IUserDetails>(`${urls.users}/${id}`)
   }
 }

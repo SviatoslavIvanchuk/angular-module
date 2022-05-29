@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 10%;
+}
+
+.usersList {
+  background: silver;
+  margin: 2px;
+  padding: 4px;
+  font-size: 20px;
+}

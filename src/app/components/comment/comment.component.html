@@ -1,6 +1,6 @@
-<div class="comment">
-  {{comment.postId}}-{{comment.id}}. {{comment.name}} -- {{comment.email}}
+<div *ngIf="comment">
   <div>
-    {{comment.body}}
+    {{comment.id}}--{{comment.name}}
+    <button (click)="getDetails()">getDetails</button>
   </div>
 </div>

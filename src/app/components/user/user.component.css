@@ -1,5 +1,12 @@
-.user {
- background: silver;
-  margin: 2px;
-  padding: 4px;
+.active {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active a{
+  color: orange;
 }

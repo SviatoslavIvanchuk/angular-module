@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postDetails {
+  width: 20%;
+}
+
+.postsList {
+  background: silver;
+  color: black;
+  font-size: 14px;
+  margin: 2px;
+  padding: 4px;
+}
