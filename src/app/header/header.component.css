@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  background: #0d0d41;
+  align-items: center;
+  padding: 10px 20%;
+}
+a{
+  text-decoration: none;
+  color: snow;
+  font-size: 20px;
+}
+
+.active {
+  color: orange;
+}

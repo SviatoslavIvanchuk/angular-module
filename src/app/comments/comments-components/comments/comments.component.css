@@ -1,16 +1,16 @@
 .container {
   display: flex;
+  justify-content: space-between;
 }
 
-.container .postsList{
+.commentList {
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
   row-gap: 10px;
   column-gap: 10px;
-  width: 80%;
 }
 
-.container .postDetails {
+.commentDetails {
   width: 15%;
 }
-

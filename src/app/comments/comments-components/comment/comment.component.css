@@ -1,0 +1,13 @@
+.container {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 100px;
+  padding: 4px;
+  background: silver;
+  color: black;
+  border: 2px solid gray;
+  border-radius: 4px;
+  justify-content: space-between;
+}
