@@ -44,9 +44,12 @@ export class RegisterComponent implements OnInit {
   register(): void {
     let rawValue = this.form.getRawValue();
     delete rawValue.confirmPassword;
-    this.authService.register(rawValue).subscribe(
-      () => this.router.navigate(['login']),
-      e => this.usernameError = e.error.username[0]
+    this.authService.register(rawValue).subscribe({
+        next: () => {
+          this.router.navigate(['login'])
+        },
+        error: e => this.usernameError = e.error.username[0]
+      }
     )
   }
 
